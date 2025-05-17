@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Update explanation
         if (amount > 0) {
-            explainElement.textContent = `Paid £${paid} and should have paid £${share}. Should receive £${amount}.`;
+            explainElement.textContent = `Paid TK${paid} and should have paid TK${share}. Should receive TK${amount}.`;
             resultElement.className = 'result positive';
         } else if (amount < 0) {
-            explainElement.textContent = `Paid £${paid} but should have paid £${share}. Owes £${Math.abs(amount)}.`;
+            explainElement.textContent = `Paid TK${paid} but should have paid TK${share}. Owes TK${Math.abs(amount)}.`;
             resultElement.className = 'result negative';
         } else {
-            explainElement.textContent = `Paid £${paid} which matches the calculated share of £${share}. All settled!`;
+            explainElement.textContent = `Paid TK${paid} which matches the calculated share of TK${share}. All settled!`;
             resultElement.className = 'result neutral';
         }
     }
